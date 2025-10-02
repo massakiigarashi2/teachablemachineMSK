@@ -33,7 +33,7 @@ def load_keras_model():
             st.error("📁 Certifique-se de que o arquivo está na mesma pasta que app.py no seu repositório Git.")
             return None
         
-        model = load_model("keras_Model.h5", compile=False)
+        model = load_model("https://raw.githubusercontent.com/massakiigarashi2/teachablemachineMSK/refs/heads/main/keras_model.h5", compile=False)
         st.success("✅ Modelo carregado com sucesso!")
         return model
     except Exception as e:
